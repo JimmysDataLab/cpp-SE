@@ -14,6 +14,32 @@ class Person
     }
 };
 
+class Pet
+{
+    public:
+        Pet(string name, int age)
+        {
+            this->name = name;
+            this->age = age;
+        }
+
+        void IncreaseAge()
+        {
+            age++;
+            
+        }
+        void PrintAge()
+        {
+            cout<<age<<endl;
+        }
+
+    private:
+        string name;
+        int age;
+
+
+};
+
 void changeAgeValue(Person p)
 {
     p.age = 30;
@@ -26,11 +52,13 @@ void changeAgeReference(Person &p)
 
 int main()
 {
-    Person p1("Akhil",29);
-    changeAgeValue(p1);
-    changeAgeReference(p1);
-    cout<<p1.age;
-
+    Person person("Akhil",29);
+    changeAgeValue(person);
+    changeAgeReference(person);
+    cout<<person.age<<endl;
+    Pet pet("Rambo",4);
+    pet.IncreaseAge();
+    pet.PrintAge();
 
     return 0;
 
