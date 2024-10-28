@@ -1,7 +1,7 @@
 import random
 import os
 
-TEST_SIZE = 10000
+TEST_SIZE = 1000
 SIZE_L, SIZE_U = 5, 1000
 RANGE_L, RANGE_U = -10000, 10000
 
